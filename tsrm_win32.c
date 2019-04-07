@@ -168,7 +168,7 @@ PSID tsrm_win32_get_token_sid(HANDLE hToken)
 
 	sid_len = GetLengthSid(pTokenUser->User.Sid);
 
-	/* ConvertSidToStringSid(pTokenUser->User.Sid, &ptcSidOwner); */
+	/*imp ConvertSidToStringSid(pTokenUser->User.Sid, &ptcSidOwner); */
 	pResultSid = malloc(sid_len);
 	if (!pResultSid) {
 		goto Finished;
